@@ -149,6 +149,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       iconData: HugeIcons.strokeRoundedRanking,
                       route: "/events",
                     ),
+                    TapIcon(
+                        name: "Announcements",
+                        iconData : HugeIcons.strokeRoundedMegaphone01,
+                        route: "/announcement",
+                        routeArg: {
+                          'batch_id': 1
+                        }),
                   ],
                 ),
               ),

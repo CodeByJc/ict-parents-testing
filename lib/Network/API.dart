@@ -23,7 +23,7 @@ String holidayListAPI = '$host$serverPath/Holiday/getAllHolidays';
 String upcomingHolidayAPI = '$host$serverPath/Holiday/getNextUpcomingHoliday';
 
 String zoomLinkListAPI = '$host$serverPath/ZoomLink/getUpcomingLinks';
-
+String announcementListAPI = '$host$serverPath/Announcement/list';
 String recentlyPlacedAPI = '$host$serverPath/Placement/recentlyPlaced';
 String companyListAPI = '$host$serverPath/Placement/companyList';
 String campusDriveListAPI = '$host$serverPath/Placement/campusDriveByStudentList';

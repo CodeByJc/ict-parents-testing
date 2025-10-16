@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:ict_mu_parents/Bindings/attendance_show_binding.dart';
 import 'package:ict_mu_parents/Bindings/faculty_contact_binding.dart';
+import 'package:ict_mu_parents/Bindings/announcement_binding.dart';
 import 'package:ict_mu_parents/Bindings/holiday_list_binding.dart';
 import 'package:ict_mu_parents/Bindings/profile_binding.dart';
 import 'package:ict_mu_parents/Firebase/firebase_messaging_service.dart';
@@ -10,6 +11,7 @@ import 'package:ict_mu_parents/Preference/preference_manager.dart';
 import 'package:ict_mu_parents/Screens/Authentication/forgot_password.dart';
 import 'package:ict_mu_parents/Screens/Holiday/holiday_list.dart';
 import 'package:ict_mu_parents/Screens/Placement/placements.dart';
+import 'package:ict_mu_parents/Screens/Announcement/announcement_show.dart';
 import 'package:ict_mu_parents/Screens/Splash/main_splash.dart';
 import 'package:ict_mu_parents/Screens/Timetable/timetable.dart';
 import 'package:ict_mu_parents/Screens/ZoomLink/zoom_link.dart';
@@ -169,6 +171,11 @@ class MyApp extends StatelessWidget {
             transition: Transition.fadeIn,
             binding: EventBinding(),
             page: () => const EventDetails()),
+        GetPage(
+            name: "/announcement",
+            transition: Transition.fadeIn,
+            binding: AnnouncementBinding(),
+            page: () => const AnnouncementShowScreen()),
       ],
       initialRoute: "/splashscreen",
     );
