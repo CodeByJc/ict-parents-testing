@@ -1,5 +1,5 @@
 String host = "https://noninvincibly-unstocked-rosena.ngrok-free.dev";
-String serverPath = "/dashboard/ict-server-testing/api/index.php";
+String serverPath = "/ict-server-testing/api/index.php";
 
 String currentVersion = "1.0";
 String validApiKey = "ictmu";
